@@ -11,7 +11,6 @@ import { CoreModule } from 'customer-libs/dist/core';
     BrowserModule,
     AppRoutingModule,
     CoreModule.forRoot({ apiUrl: 'https://randomuser.me/api/?gender=female' }),
-    CoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

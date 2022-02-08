@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { CoreService, Users } from 'customer-libs/dist/core';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +6,5 @@ import { Observable } from 'rxjs';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  $users: Observable<Users>;
-
   title = 'test-lint';
-
-  constructor(private core: CoreService) {
-    this.$users = core.get();
-  }
 }
